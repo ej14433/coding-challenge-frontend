@@ -5,7 +5,8 @@
 
 input {
 	padding: 1rem;
-	min-width: 20rem;
+	width: 20rem;
+	margin: 1rem;
 	border-radius: 0.25rem;
 	box-shadow: 2px 2px 4px 0px rgba(230, 230, 230, 1);
 	font-size: 1rem;
