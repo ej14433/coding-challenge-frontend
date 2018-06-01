@@ -1,0 +1,17 @@
+ul {
+	display: grid;
+	list-style-type: none;
+	grid-template-columns: repeat(auto-fit, 10rem);
+	grid-gap: 1.5rem;
+}
+
+ul li {
+	border: whitesmoke solid thin;
+	width: 10rem;
+	overflow: hidden;
+	padding: 0.5rem;
+}
+
+ul li:hover {
+	box-shadow: 3px 3px 3px 0px rgba(173, 173, 173, 1);
+}

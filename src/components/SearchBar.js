@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './SearchBar.css';
+import './css/SearchBar.css';
 
 export default class SearchBar extends Component {
 	constructor() {
@@ -18,6 +18,7 @@ export default class SearchBar extends Component {
 		return (
 			<div className="container">
 				<input
+					placeholder="Search"
 					type="text"
 					onChange={e => this.onChange(e.target.value)}
 				/>

@@ -1,12 +1,18 @@
 import React from 'react';
-import './ResultItem.css';
+import './css/ResultItem.css';
 
 const ResultItem = movie => {
-	const url = `https://image.tmdb.org/t/p/original/${movie.gif.poster_path}`;
+	let url;
+	if (movie.movie.poster_path) {
+		url = `https://image.tmdb.org/t/p/original/${movie.movie.poster_path}`;
+	} else {
+		url = 'http://via.placeholder.com/200x300';
+	}
 
 	return (
 		<li>
 			<img src={url} />
+			<p>{movie.movie.title}</p>
 		</li>
 	);
 };

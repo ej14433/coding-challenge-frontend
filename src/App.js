@@ -3,6 +3,7 @@ import request from 'superagent';
 
 import SearchBar from './components/SearchBar';
 import Results from './components/Results';
+import Navbar from './components/Navbar';
 
 import './App.css';
 
@@ -31,6 +32,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
+				<Navbar />
 				<SearchBar onChange={value => this.handleSearchChange(value)} />
 				<Results movies={this.state.movies} />
 			</div>
