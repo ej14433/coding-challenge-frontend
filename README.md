@@ -14,11 +14,11 @@ To install this application you'll need npm, download the repository and run the
 
 In order to run a development server use the command:
 
-`yarn start`
+`npm run start`
 
 This will start a development server on port 3000. In order to build for the web run the command:
 
-`yarn build`
+`npm run build`
 
 ### Built With
 
