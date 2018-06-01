@@ -1,6 +1,7 @@
 ul {
 	display: grid;
 	list-style-type: none;
+	/* Selects number of rows automatically depending on screen width */
 	grid-template-columns: repeat(auto-fit, 10rem);
 	grid-gap: 1.5rem;
 }

@@ -25,6 +25,7 @@ class App extends Component {
 				'+'
 			)}`;
 
+			// Use superagent to send GET request to TMdb API, which responds with a list of movies
 			request.get(url, (err, res) => {
 				this.setState({ movies: res.body.results });
 			});

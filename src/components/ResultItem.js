@@ -8,6 +8,7 @@ const ResultItem = movie => {
 			movie.movieProp.poster_path
 		}`;
 	} else {
+		// If no image is returned from TMdb API, use placeholder image
 		url = 'http://via.placeholder.com/200x300';
 	}
 
