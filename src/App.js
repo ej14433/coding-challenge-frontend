@@ -18,15 +18,17 @@ class App extends Component {
 	}
 
 	handleSearchChange(value) {
-		const api_key = '9910563a9e241cd2c1c307b03457e181';
-		const url = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&query=${value.replace(
-			/\s/g,
-			'+'
-		)}`;
+		if (value) {
+			const api_key = '9910563a9e241cd2c1c307b03457e181';
+			const url = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&query=${value.replace(
+				/\s/g,
+				'+'
+			)}`;
 
-		request.get(url, (err, res) => {
-			this.setState({ movies: res.body.results });
-		});
+			request.get(url, (err, res) => {
+				this.setState({ movies: res.body.results });
+			});
+		}
 	}
 
 	render() {
