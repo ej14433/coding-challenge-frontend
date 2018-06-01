@@ -1,12 +1,12 @@
-#Simple React Application to Search The Movie Database
+# Simple React Application to Search The Movie Database
 
-##Getting Started
+## Getting Started
 
-###Prerequisites
+### Prerequisites
 
 *   NPM - https://www.npmjs.com/
 
-###Installation
+### Installation
 
 To install this application you'll need npm, download the repository and run the command:
 
@@ -20,15 +20,17 @@ This will start a development server on port 3000. In order to build for the web
 
 `yarn build`
 
-###Built With
+### Built With
 
 *   [React](https://reactjs.org/)
 *   [create-react-app](https://github.com/facebook/create-react-app)
 *   [superagent](https://www.npmjs.com/package/superagent)
 *   [The Movie DB API](https://www.themoviedb.org/documentation/api)
 
-##Author
+## Author
+
 Elis Jones
 
-##License
+## License
+
 This project is licensed under the MIT License.
